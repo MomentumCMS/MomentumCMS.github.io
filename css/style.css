@@ -1,0 +1,32 @@
+/*== Header ===============================================================*/
+
+.jumbotron {
+  height: 400px;
+  width: 100%;
+  background-image: url('../images/jumbotron-bg.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+.jumbotron h1, .jumbotron h1 a {
+  display: block;
+  width: 135px;
+  height: 135px;
+  text-decoration: none;
+  text-indent: -999em;
+  background-image: url('../images/momentum-logo.png');
+  background-size: 100%;
+  margin: 50px auto 30px auto;
+}
+
+.jumbotron h2 {
+  color: #fff;
+  font-size: 28px;
+}
+
+
+/*== Content ==============================================================*/
+
+.values .glyphicon {
+  font-size: 75px;
+}
