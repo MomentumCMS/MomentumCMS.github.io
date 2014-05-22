@@ -2,18 +2,20 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
     <title>Momentum CMS</title>
   </head>
   <body>
 
     <div class="jumbotron">
       <div class="container">
-        <h1>Momentum CMS</h1>
-        <h2>A stylish CMS for responsible developers</h2>
+        <h1 class="animated fadeInDown">Momentum CMS</h1>
+        <h2 class="animated fadeInDown">A stylish CMS for responsible developers</h2>
       </div>
     </div>
 
@@ -37,29 +39,108 @@
         </div>
       </div><!-- .row -->
 
+      <br>
       <hr>
+      <br>
 
- <!--      <div class="row">
-        <div class="col-md-6">
-          <h3>Check out our project on Github</h3>
-          <p>Interested in contributing to an open source project? Swing by Github and give us a hand.</p>
-          <a href="https://github.com/MomentumCMS/momentum_cms" class="btn btn-primary">Github Repo</a>
+      <div class="row">
+
+        <div class="col-md-12">
+          <h2>The Future of Content Management</h2>
+          <p class="lead">Express your site's structure in JSON, host it on your own server, and Momentum will do the rest.</p>
         </div>
-        <div class="col-md-6">
-          <h3>Feature Roadmap</h3>
-          <ul class="list-group">
-            <li class="list-group-item">Multilingual Content</li>
-            <li class="list-group-item">Site Fixtures (import/export)</li>
-            <li class="list-group-item">Revisions</li>
-            <li class="list-group-item">Publishing Flow</li>
-            <li class="list-group-item">API</li>
-            <li class="list-group-item">Liquid Templates</li>
-          </ul>
+
+        <div class="col-md-12">
+          <pre style="max-height: 400px;" class="language-javascript"><code class="language-javascript">
+{
+  "title": "Your Fancy Site",
+
+  "templates": {
+    "home": {
+      "label": "Homepage",
+      "url": "http://your-url.com/templates/home.liquid"
+    },
+    "2-column": {
+      "label": "2 Column",
+      "url": "http://your-url.com/templates/2-column.liquid"
+    },
+    "landing-page": {
+      "label": "Landing Page",
+      "url": "http://your-url.com/templates/landing-page.liquid"
+    }
+  },
+
+  "fieldsets": {
+    "standard_page": {
+      "templates": ["home", "landing-page"],
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "primary_content": {
+          "type": "rich_text_long",
+        }
+        "slug": {
+          "type": "slug",
+          "required": true
+        }
+      }
+    },
+    "landing_page": {
+      "templates": ["landing-page"],
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "banner": {
+        "type": "image",
+        "format": "2000x400#",
+        "required": true
+      },
+      "slug": {
+        "type": "slug",
+        "required": true
+      }
+    },
+    "2-column": {
+      "templates": ["2-column"],
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "left-column": {
+        "type": "rich_text_long"
+      },
+      "right-column": {
+        "type": "rich_text_long"
+      }
+    }
+  }
+
+}
+          </code></pre>
+        </div>
+      </div><!-- .row -->
+
+      <br>
+      <hr>
+      <br>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="muted">&copy 2014 MomentumCms. Alpha release coming soon...</p>
+          <br>
+          <br>
         </div>
       </div>
 
- -->
     </div>
 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/page.js"></script>
   </body>
 </html>

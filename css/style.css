@@ -30,3 +30,18 @@
 .values .glyphicon {
   font-size: 75px;
 }
+
+p.muted {
+  color: #ccc;
+}
+
+/*== Code Blocks ==========================================================*/
+pre {
+  border: 0;
+  line-height: 150%;
+  font-size: 15px;
+}
+
+.token.string {
+  color: #082442;
+}
