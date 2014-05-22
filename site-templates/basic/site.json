@@ -1,44 +1,58 @@
 {
+
   "title": "Basic Site Template",
+
   "templates": [
     {"label": "Homepage", "template_url": "./templates/homepage.liquid"},
     {"label": "2 Column", "template_url": "./templates/2-column.liquid"},
   ],
 
-  "documents": {
-    "page": {
-      "fields": {
-        "title": {
-          "type": "string",
-          "required": true
-        },
-        "content": {
-          "type": "rich_text_long",
-          "required": true
-        }
+  "fieldsets": {
+    "standard": {
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "content": {
+        "type": "rich_text_long",
+        "required": true
       }
     },
-
-    "post": {
-      "fields": {
-        "title": {
-          "type": "string",
-          "required": true
-        },
-        "excerpt": {
-          "type": "rich_text_short",
-          "required": true
-        },
-        "content": {
-          "type": "rich_text_long",
-          "required": true
-        },
-        "featured_image": {
-          "type": "image",
-          "required": true
-        }
+    "page_2_column": {
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "left_content": {
+        "type": "rich_text_long",
+      },
+      "right_content": {
+        "type": "rich_text_long",
+      }
+    },
+    "post_standard": {
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "content": {
+        "type": "rich_text_long",
+        "required": true
+      },
+      "excerpt": {
+        "type": "rich_text_short",
+        "required": true
       }
     }
+  },
 
+  "documents": {
+    "page": {
+      "fieldsets": ["page_standard", "page_2_column"]
+     },
+     "post": {
+      "fieldsets": ["post_standard"]
+     }
   }
+
 }
