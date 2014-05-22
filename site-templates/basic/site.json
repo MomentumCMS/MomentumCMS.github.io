@@ -1,0 +1,44 @@
+{
+  "title": "Basic Site Template",
+  "templates": [
+    {"label": "Homepage", "template_url": "./templates/homepage.liquid"},
+    {"label": "2 Column", "template_url": "./templates/2-column.liquid"},
+  ],
+
+  "documents": {
+    "page": {
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "content": {
+          "type": "rich_text_long",
+          "required": true
+        }
+      }
+    },
+
+    "post": {
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "excerpt": {
+          "type": "rich_text_short",
+          "required": true
+        },
+        "content": {
+          "type": "rich_text_long",
+          "required": true
+        },
+        "featured_image": {
+          "type": "image",
+          "required": true
+        }
+      }
+    }
+
+  }
+}
